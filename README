@@ -1,0 +1,25 @@
+cc128-php-extractor is a PHP program to make graphics from your current cost cc128 device.
+------------------------------------------------------------------------------------------
+
+
+The program use the 2-hour consumption average so it needs to be pluged all the 30 days 
+to don't loose any data.
+
+
+usage :
+
+- configure serial port into cc128.php
+- hold down OK and down buttons on the cc128 (current cost) untill led is flashing
+- run in a console 
+	$ php cc128.php
+- the program is acquiring new data and store them
+- you should now have an cc128.db sqllite file
+- the db file is used to generated a javascript file holding all the plots
+- open index.html in your browser and review your power consumption
+
+
+to refresh data :
+- use the same procedure (only new data will be added)
+
+
+please report bugs at : http://github.com/ka2er/cc128-php-extractor/issues 
