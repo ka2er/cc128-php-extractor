@@ -1,12 +1,18 @@
 cc128-php-extractor is a PHP program to make graphics from your current cost cc128 device.
 ------------------------------------------------------------------------------------------
 
+Actually there is 2 parts :
+- PHP extractor (ENVI => PHP => Sqlite)
+- Python upload (Sqlite => Python => Google Power Meter)
+
+In a future release PHP extractor will be replaced with a python one.
+
 
 The program use the 2-hour consumption average so it needs to be pluged all the 30 days 
 to don't loose any data.
 
 
-usage :
+PHP extractor usage :
 
 - configure serial port into cc128.php
 - hold down OK and down buttons on the cc128 (current cost) untill led is flashing
@@ -20,6 +26,13 @@ usage :
 
 to refresh data :
 - use the same procedure (only new data will be added)
+
+
+Python upload usage :
+- configure authToken and variable path in config
+- run in a console
+	$ python -f full_path_to_config_file path_to_sqlite_file
+
 
 
 please report bugs at : http://github.com/ka2er/cc128-php-extractor/issues 

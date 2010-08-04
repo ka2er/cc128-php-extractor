@@ -14,7 +14,7 @@ echo "CC128 PHP parser (".date("d/m/Y H:i").")\n";
  * config section
  */
 $nb_sensors = 1; // nb of sensors we want to handle
-$nb_frames = 5; // nb of trame to analysis
+$nb_frames = 10; // nb of trame to analysis
 
 /**
  * program section
