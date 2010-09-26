@@ -31,7 +31,7 @@ to refresh data :
 Python upload usage :
 - configure authToken and variable path in config
 - run in a console
-	$ python -f full_path_to_config_file path_to_sqlite_file
+	$ ./sqlite2googlepowermeter.py -f full_path_to_config_file path_to_sqlite_file
 
 
 
